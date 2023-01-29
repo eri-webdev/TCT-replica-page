@@ -1,0 +1,119 @@
+/* first container */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+a.nav-link:hover {
+  animation: nav-links 0.3s ease 0s 1 normal forwards;
+}
+
+@keyframes nav-links {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.carousel-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+div .carousel-caption {
+  font-size: 3rem;
+}
+.carousel-item .carousel-caption h1 {
+  font-size: 3rem;
+}
+.carousel-item .carousel-caption h2 {
+  font-size: 2rem;
+}
+
+.carousel-caption .btn {
+  padding: 1rem;
+}
+
+.navbar .collapse .search-box form {
+  padding-left: auto;
+}
+
+.mid-section {
+  text-align: center;
+}
+.mid-section h2 {
+  color: rgb(212, 0, 0);
+  font-weight: bolder;
+}
+
+/* cards section */
+
+.card-header {
+  font-weight: bold;
+  color: rgb(202, 0, 0);
+  background: blue;
+}
+
+.card {
+  box-shadow: 0px 0px 20px 3px #d6d2d2;
+  border-radius: 8px;
+}
+.card:hover {
+  box-shadow: 0px 0px 12px 3px #afafaf;
+  border-radius: 8px;
+  animation: card-zoom 0.2s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes card-zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.about-us-bg {
+  background-color: rgb(70, 53, 110);
+}
+
+.contact-info {
+  border: solid 1px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px rgb(170, 170, 170);
+}
+
+.my-form {
+  border: solid 1px rgb(212, 206, 206);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px rgb(170, 170, 170);
+}
+
+.btn.btn-outline-success {
+  margin: auto;
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 3rem;
+}
+.col.contact-info:hover {
+  animation: card-zoom 0.2s ease-in-out 0s 1 normal forwards;
+}
+
+
+
+/* contact page */
